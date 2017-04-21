@@ -1,0 +1,622 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://devtools.chrome.com">chrome-devtools-frontend (v1.0.466241)</a>
+</h1>
+<h4>Chrome DevTools UI</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.chrome-devtools-frontend">module chrome-devtools-frontend</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">chrome-devtools-frontend.</span>gonzales_scss</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">chrome-devtools-frontend.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.chrome-devtools-frontend.gonzales_scss">module chrome-devtools-frontend.gonzales_scss</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.gonzales_scss.createNode">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.gonzales_scss.</span>createNode
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.gonzales_scss.parse">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.gonzales_scss.</span>parse
+            <span class="apidocSignatureSpan">(css, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.chrome-devtools-frontend.utils">module chrome-devtools-frontend.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.atob">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>atob
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.copy">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>copy
+            <span class="apidocSignatureSpan">(src, dest)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.copyRecursive">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>copyRecursive
+            <span class="apidocSignatureSpan">(src, dest)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.fetch">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>fetch
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.includes">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>includes
+            <span class="apidocSignatureSpan">(sequence, target)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.isDir">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>isDir
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.isFile">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>isFile
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.parseArgs">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>parseArgs
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.removeRecursive">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>removeRecursive
+            <span class="apidocSignatureSpan">(filePath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.chrome-devtools-frontend.utils.shellOutput">
+            function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>shellOutput
+            <span class="apidocSignatureSpan">(command)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.chrome-devtools-frontend" id="apidoc.module.chrome-devtools-frontend">module chrome-devtools-frontend</a></h1>
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.chrome-devtools-frontend.gonzales_scss" id="apidoc.module.chrome-devtools-frontend.gonzales_scss">module chrome-devtools-frontend.gonzales_scss</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.gonzales_scss.createNode" id="apidoc.element.chrome-devtools-frontend.gonzales_scss.createNode">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.gonzales_scss.</span>createNode
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createNode(options) {
+	    return new Node(options);
+	  }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.gonzales_scss.parse" id="apidoc.element.chrome-devtools-frontend.gonzales_scss.parse">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.gonzales_scss.</span>parse
+        <span class="apidocSignatureSpan">(css, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parser(css, options) {
+	  if (typeof css !== 'string') throw new Error('Please, pass a string to parse');else if (!css) return __webpack_require__(21)();
+
+	  var syntax = options &amp;&amp; options.syntax || 'css';
+	  var context = options &amp;&amp; options.context || 'stylesheet';
+	  var tabSize = options &amp;&amp; options.tabSize;
+	  if (!isInteger(tabSize) || tabSize &lt; 1) tabSize = 1;
+
+	  var syntaxParser = syntaxes[syntax];
+
+	  if (!syntaxParser) {
+	    var message = 'Syntax "' + syntax + '" is not supported yet, sorry';
+	    return console.error(message);
+	  }
+
+	  var getTokens = syntaxParser.tokenizer;
+	  var mark = syntaxParser.mark;
+	  var parse = syntaxParser.parse;
+
+	  var tokens = getTokens(css, tabSize);
+	  mark(tokens);
+
+	  var ast;
+	  try {
+	    ast = parse(tokens, context);
+	  } catch (e) {
+	    if (!e.syntax) throw e;
+	    throw new ParsingError(e, css);
+	  }
+
+	  return ast;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return fs.readdirSync(FRONTEND_PATH).filter(function(file) {
+    return fs.statSync(path.join(FRONTEND_PATH, file)).isDirectory() &amp;&amp;
+        utils.isFile(path.join(FRONTEND_PATH, file, 'module.json'));
+  });
+}
+
+function parseJSON(string) {
+  return JSON.<span class="apidocCodeKeywordSpan">parse</span>(string);
+}
+
+function stringifyJSON(obj) {
+  return unicodeEscape(JSON.stringify(obj, null, 4) + '\n');
+}
+
+// http://stackoverflow.com/questions/7499473/need-to-escape-non-ascii-characters-in-javascript
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.chrome-devtools-frontend.utils" id="apidoc.module.chrome-devtools-frontend.utils">module chrome-devtools-frontend.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.atob" id="apidoc.element.chrome-devtools-frontend.utils.atob">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>atob
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function atob(str) {
+  return new Buffer(str, 'base64').toString('binary');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.copy" id="apidoc.element.chrome-devtools-frontend.utils.copy">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>copy
+        <span class="apidocSignatureSpan">(src, dest)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function copy(src, dest) {
+  try {
+    var targetFilePath = path.resolve(dest, path.basename(src));
+    fs.writeFileSync(targetFilePath, fs.readFileSync(src));
+  } catch (error) {
+    throw new Error(`Received an error: [${error}] while trying to copy: ${src} -&gt; ${dest}`);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.copyRecursive" id="apidoc.element.chrome-devtools-frontend.utils.copyRecursive">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>copyRecursive
+        <span class="apidocSignatureSpan">(src, dest)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function copyRecursive(src, dest) {
+  try {
+    if (isFile(src)) {
+      copy(src, dest);
+      return;
+    }
+    var targetDirPath = path.resolve(dest, path.basename(src));
+    if (!fs.existsSync(targetDirPath))
+      fs.mkdirSync(targetDirPath);
+    if (isDir(src)) {
+      var files = fs.readdirSync(src);
+      for (var i = 0; i &lt; files.length; i++) {
+        var childPath = path.resolve(src, files[i]);
+        if (isDir(childPath)) {
+          copyRecursive(childPath, targetDirPath);
+        } else {
+          var targetFilePath = path.resolve(targetDirPath, path.basename(childPath));
+          fs.writeFileSync(targetFilePath, fs.readFileSync(childPath));
+        }
+      }
+    }
+  } catch (error) {
+    throw new Error(`Received an error: [${error}] while trying to copy: ${src} -&gt; ${dest}`);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.fetch" id="apidoc.element.chrome-devtools-frontend.utils.fetch">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>fetch
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fetch(url) {
+  return new Promise(fetchPromise);
+
+  function fetchPromise(resolve, reject) {
+    var request;
+    var protocol = parseURL(url).protocol;
+    var handleResponse = getCallback.bind(null, resolve, reject);
+    if (protocol === 'https:') {
+      request = https.get(url, handleResponse);
+    } else if (protocol === 'http:') {
+      request = http.get(url, handleResponse);
+    } else {
+      reject(new Error(`Invalid protocol for url: ${url}`));
+      return;
+    }
+    request.on('error', err =&gt; reject(err));
+  }
+
+  function getCallback(resolve, reject, response) {
+    if (response.statusCode !== 200) {
+      reject(new Error(`Request error: + ${response.statusCode}`));
+      return;
+    }
+    var body = new Stream();
+    response.on('data', chunk =&gt; body.push(chunk));
+    response.on('end', () =&gt; resolve(body.read()));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function proxy(filePath) {
+if (!(filePath in proxyFilePathToURL))
+  return null;
+if (localProtocolPath &amp;&amp; filePath === '/front_end/InspectorBackendCommands.js')
+  return serveLocalProtocolFile();
+if (process.env.CHROMIUM_COMMIT)
+  return onProxyFileURL(proxyFilePathToURL[filePath](process.env.CHROMIUM_COMMIT));
+return utils.<span class="apidocCodeKeywordSpan">fetch</span>(`http://localhost:${remoteDebuggingPort}/json/version`)
+    .then(onBrowserMetadata)
+    .then(onProxyFileURL);
+
+function serveLocalProtocolFile() {
+  return new Promise((resolve, reject) =&gt; {
+    fs.exists(localProtocolPath, fsExistsCallback);
+    function fsExistsCallback(fileExists) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.includes" id="apidoc.element.chrome-devtools-frontend.utils.includes">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>includes
+        <span class="apidocSignatureSpan">(sequence, target)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function includes(sequence, target) {
+  return sequence.indexOf(target) &gt; -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var CHROMIUM_DEFAULT_PATH = path.resolve(__dirname, '..', '..', '..', '..', '..'
+;, '..', 'out', 'Release', 'chrome');
+var CHROME_PROFILE_PATH = path.resolve(__dirname, '..', '..', '.dev_profile');
+
+var Flags = {
+RESET_PROFILE: '--reset-profile',
+};
+
+if (utils.<span class="apidocCodeKeywordSpan">includes</span>(process.argv, Flags.RESET_PROFILE)) {
+console.log(`Removing your dev profile for Chrome Canary / Chromium at:`);
+console.log(CHROME_PROFILE_PATH, '\n');
+utils.removeRecursive(CHROME_PROFILE_PATH);
+}
+
+var chromeArgs = [
+`--remote-debugging-port=${REMOTE_DEBUGGING_PORT}`,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.isDir" id="apidoc.element.chrome-devtools-frontend.utils.isDir">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>isDir
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDir(path) {
+  try {
+    return fs.statSync(path).isDirectory();
+  } catch (error) {
+    return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+console.log('Generated dot file &amp; svg');
+startServer();
+console.log(`Go to: http://localhost:${SERVER_PORT}/jquery_svg.html`);
+}
+
+function generateDot() {
+if (!utils.<span class="apidocCodeKeywordSpan">isDir</span>(OUT_DIR_PATH))
+  fs.mkdirSync(OUT_DIR_PATH);
+const modules = new Set();
+const moduleToDependencyList = ['digraph dependencies {'];
+moduleToDependencyList.push('fixedsize = true;');
+fs.readdirSync(FRONTEND_PATH).forEach(function(file) {
+  const moduleJSONPath = path.join(FRONTEND_PATH, file, 'module.json');
+  if (fs.statSync(path.join(FRONTEND_PATH, file)).isDirectory() &amp;&amp; utils.isFile(moduleJSONPath)) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.isFile" id="apidoc.element.chrome-devtools-frontend.utils.isFile">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>isFile
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFile(path) {
+  try {
+    return fs.statSync(path).isFile();
+  } catch (error) {
+    return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function atob(str) {
+return new Buffer(str, 'base64').toString('binary');
+}
+
+function isFile(path) {
+try {
+  return fs.statSync(path).<span class="apidocCodeKeywordSpan">isFile</span>();
+} catch (error) {
+  return false;
+}
+}
+
+function isDir(path) {
+try {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.parseArgs" id="apidoc.element.chrome-devtools-frontend.utils.parseArgs">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>parseArgs
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseArgs(args) {
+  var argObject = {};
+  for (var i = 0; i &lt; args.length; i++) {
+    var arg = args[i];
+    var components = arg.split('=');
+    var key = components[0];
+    argObject[key] = components[1] || true;
+  }
+  return argObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.removeRecursive" id="apidoc.element.chrome-devtools-frontend.utils.removeRecursive">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>removeRecursive
+        <span class="apidocSignatureSpan">(filePath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function removeRecursive(filePath) {
+  try {
+    if (fs.existsSync(filePath)) {
+      if (isFile(filePath)) {
+        fs.unlinkSync(filePath);
+        return;
+      }
+      var files = fs.readdirSync(filePath);
+      for (var i = 0; i &lt; files.length; i++) {
+        var childPath = path.resolve(filePath, files[i]);
+        if (isDir(childPath))
+          removeRecursive(childPath);
+        else
+          fs.unlinkSync(childPath);
+      }
+      fs.rmdirSync(filePath);
+    }
+  } catch (error) {
+    throw new Error(`Received an error: [${error}] while trying to remove: ${filePath}`);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var Flags = {
+RESET_PROFILE: '--reset-profile',
+};
+
+if (utils.includes(process.argv, Flags.RESET_PROFILE)) {
+console.log(`Removing your dev profile for Chrome Canary / Chromium at:`);
+console.log(CHROME_PROFILE_PATH, '\n');
+utils.<span class="apidocCodeKeywordSpan">removeRecursive</span>(CHROME_PROFILE_PATH);
+}
+
+var chromeArgs = [
+`--remote-debugging-port=${REMOTE_DEBUGGING_PORT}`,
+`--custom-devtools-frontend=http://localhost:${SERVER_PORT}/front_end/`, `--no-first-run`,
+'--enable-devtools-experiments', `http://localhost:${REMOTE_DEBUGGING_PORT}#custom=true&amp;experiments=true`,
+`https://devtools.chrome.com`, `--user-data-dir=${CHROME_PROFILE_PATH}`
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.chrome-devtools-frontend.utils.shellOutput" id="apidoc.element.chrome-devtools-frontend.utils.shellOutput">
+        function <span class="apidocSignatureSpan">chrome-devtools-frontend.utils.</span>shellOutput
+        <span class="apidocSignatureSpan">(command)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function shellOutput(command) {
+  return shell(command).toString().trim();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function onProxyFileURL(proxyFileURL) {
+  if (proxyFileCache.has(proxyFileURL))
+    return Promise.resolve(proxyFileCache.get(proxyFileURL));
+  return utils.fetch(proxyFileURL).then(cacheProxyFile.bind(null, proxyFileURL)).catch(onMissingFile);
+}
+
+function onMissingFile() {
+  var isFullCheckout = utils.<span class="apidocCodeKeywordSpan">shellOutput</span>('git config --get remote.origin.url'
+;) ===
+      'https://chromium.googlesource.com/chromium/src.git';
+  var earlierCommitHash;
+  var gitLogCommand = `git log --max-count=1 --grep="Commit-Position" --before="12 hours ago"`;
+  if (isFullCheckout) {
+    earlierCommitHash = utils.shellOutput(`${gitLogCommand} --pretty=format:"%H"`);
+  } else {
+    var commitMessage = utils.shellOutput(`${gitLogCommand}`);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
